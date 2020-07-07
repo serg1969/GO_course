@@ -5,10 +5,12 @@ import (
 	"strings"
 )
 
+const total string = "чат"
+
 //K solution
 
 func main() {
-	var total string = "чат"
+
 	var message string
 
 	fmt.Scan(&message)
