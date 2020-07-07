@@ -82,4 +82,8 @@ func main() {
 	substring := "f"
 	generalString := "float"
 	fmt.Println(strings.Contains(generalString, substring))
+
+	var LargeUint uint8 = 112
+	var LargeInt int8 = int8(LargeUint)
+	fmt.Println("OVERFLOW EXAMPLE:", LargeInt)
 }
