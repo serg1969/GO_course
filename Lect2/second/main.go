@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"unicode/utf8"
+)
 
 func main() {
 	var a, b float32 = 22.5, 23.5
@@ -23,5 +26,9 @@ func main() {
 	} else {
 		fmt.Println("4")
 	}
+
+	utf8.RuneCountInString(message) //количество символов в строке message
+
+	//!(true && true) == !true || !true
 
 }
